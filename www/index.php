@@ -29,9 +29,13 @@
                             <ul>
                                 <li><?= apache_get_version(); ?></li>
                                 <li>PHP <?= phpversion(); ?></li>
+                                <li>DB Host <?=$_ENV["MYSQL_HOST"]?></li>
+                                <li>DB User <?=$_ENV["MYSQL_USER"]?></li>
+                                <li>DB password <?=$_ENV["MYSQL_PASSWORD"]?></li>
+                                <li>DB <?=$_ENV["MYSQL_DATABASE"]?></li>
                                 <li>
                                     <?php
-                                    $link = mysqli_connect("database", "root", $_ENV['MYSQL_ROOT_PASSWORD'], null);
+                                    $link = mysqli_connect($_ENV["MYSQL_HOST"],$_ENV["MYSQL_USER"], $_ENV['MYSQL_PASSWORD'], $_ENV["MYSQL_DATABASE"]);
 
 /* check connection */
                                     if (mysqli_connect_errno()) {
@@ -53,7 +57,7 @@
                         <div class="content">
                             <ul>
                                 <li><a href="/phpinfo.php">phpinfo()</a></li>
-                                <li><a href="http://localhost:<? print $_ENV['PMA_PORT']; ?>">phpMyAdmin</a></li>
+                                <li><a href="http://localhost/adminer.php">Adminer</a></li>
                                 <li><a href="/test_db.php">Test DB Connection with mysqli</a></li>
                                 <li><a href="/test_db_pdo.php">Test DB Connection with PDO</a></li>
                             </ul>

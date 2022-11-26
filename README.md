@@ -6,9 +6,6 @@ A basic LAMP stack environment built using Docker Compose. It consists of the fo
 
 - PHP
 - Apache
-- MySQL
-- phpMyAdmin
-- Redis
 
 As of now, we have several different PHP versions. Use appropriate php version as needed:
 
