@@ -1,0 +1,13 @@
+127.0.0.1   backend.liquiloans.local
+127.0.0.1   frontend.liquiloans.local
+127.0.0.1   invapp.liquiloans.local
+127.0.0.1   inv.liquiloans.local
+127.0.0.1   ifaapp.liquiloans.local
+127.0.0.1   ifa.liquiloans.local
+127.0.0.1   adminapp.liquiloans.local
+127.0.0.1   admin.liquiloans.local
+127.0.0.1   webapp.liquiloans.local
+127.0.0.1   web.liquiloans.local
+127.0.0.1   api.liquiloans.local
+127.0.0.1   router.liquiloans.local
+127.0.0.1   script.liquiloans.local

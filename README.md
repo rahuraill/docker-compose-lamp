@@ -289,3 +289,21 @@ In Production you should modify at a minimum the following subjects:
 
 - php handler: mod_php=> php-fpm
 - secure mysql users with proper source IP limitations
+
+---
+## update hosts on your local machine
+> copy hosts from hosts file in project to your local machine
+- Windows
+
+```
+C:\Windows\System32\drivers\etc\hosts
+```
+
+- Mac
+```
+/etc/hosts
+```
+- Linux
+```
+/etc/hosts
+```
